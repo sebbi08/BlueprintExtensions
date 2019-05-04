@@ -50,7 +50,7 @@ function Landfill.compute_prototype_overrides()
     log("Computing collision box overrides...")
 
     -- Temporary surface.
-    local surface = game.create_surface("_BPEX_Temp_Surface")
+    local surface = game.create_surface("_BPEX_Temp_Surface" .. math.random(1000))
     local x, y
 
     for name, proto in pairs(game.entity_prototypes) do
